@@ -1,0 +1,105 @@
+.MainBanner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 220px 20% 320px 20%;
+  margin-top: 0px;
+
+  &Subtitle {
+    background-color: #fff;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 6px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    span {
+      font-style: normal;
+      color: var(--main-color);
+    }
+  }
+
+  &Title {
+    font-size: 62px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 72px;
+    width: 50%;
+    margin-bottom: 0px;
+  }
+}
+
+.NavWrapper {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50px);
+  z-index: 10;
+}
+
+.Btn {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  opacity: 1;
+  transition: all .3s;
+
+  &Prev {
+    left: 45px;
+  }
+
+  &Next {
+    right: 45px;
+  }
+
+  &Icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+}
+
+.Btn:hover {
+  background-color: rgba(255, 255, 255, 0.375);
+}
+
+.Pagination {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  bottom: 60px !important;
+  left: 20% !important;
+  z-index: 1;
+
+
+  &Bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all .5s ease;
+    cursor: pointer;
+  }
+}
+
+.ActiveBullet {
+  background-color: var(--main-color);
+}

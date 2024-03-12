@@ -1,0 +1,68 @@
+.SubHeader {
+  background-color: #fff;
+  padding: 10px 0px;
+  border-bottom: 1px solid #eee;
+
+  &Info {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &List {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #7a7a7a;
+    border-right: 1px solid #eee;
+    margin-right: 25px;
+    padding-right: 25px;
+  }
+  
+  &Icon {
+    display: block;
+    color: var(--main-color);
+    margin-right: 8px;
+  }
+
+  &List:last-child {
+    margin-right: 0px;
+    padding-right: 0px;
+    border-right: none;
+  }
+}
+
+.Social {
+  display: flex;
+  margin-left: 8px;
+  
+  &List {
+    margin-left: 8px;
+  }
+
+  &Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    transition: all .3s;
+  }
+
+  &Link:hover {
+    background-color: var(--main-color);
+  }
+}
+
+.FlexBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

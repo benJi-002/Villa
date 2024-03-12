@@ -1,0 +1,51 @@
+.FunFacts {
+  margin-top: 125px;
+}
+
+.Fact {
+  background-color: #ffeee9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+  width: 270px;
+  padding: 20px 0px;
+
+  &Numeric {
+    font-size: 40px;
+    color: var(--main-color);
+  }
+
+  &Text {
+    text-align: left;
+    font-size: 16px;
+    color: #1e1e1e;
+    font-weight: 600;
+    line-height: 28px;
+    text-transform: capitalize;
+  }
+
+  &Circle {
+    display: flex;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    right: -25px;
+    top: -25px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &Icon {
+    color: #fff
+  }
+}
+
+.FlexBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

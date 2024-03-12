@@ -1,0 +1,47 @@
+.Blog {
+
+  &Section {
+    margin-top: 120px;
+  }
+
+  &Grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.Pagination {
+
+  &Wrapper {
+    margin-top: 50px;
+    grid-area: 2 / 2;
+    position: relative;
+    width: 50%;
+  }
+
+  &Button {
+    position: absolute;
+    height: 40px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all .3s;
+    padding: 0 20px 0 20px;
+  }
+
+  &Button:hover {
+    background-color: var(--main-color);
+  }
+}
+
+.Back {
+  left: 0;
+}
+
+.Next {
+  right: 0;
+}

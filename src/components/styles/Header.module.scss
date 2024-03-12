@@ -1,0 +1,97 @@
+.HeaderArea {
+  position: relative;
+  background-color: #fff;
+  z-index: 100;
+  transition: all .5s ease 0s;
+  padding: 20px 0;
+  max-height: 80px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+}
+
+.MainNav {
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Logo {
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.Nav {
+  display: flex;
+  justify-content: right;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  z-index: 999;
+
+  &List {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  } 
+  
+  &Link {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #1e1e1e;
+    transition: all 0.4s ease 0s;
+    border: transparent;
+    letter-spacing: .25px;
+
+    &Active {
+      color: var(--main-color);
+    } 
+  }
+
+  &Link:hover {
+    color: var(--main-color);
+  }
+}
+
+.ButtonLink {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  border-radius: 20px;
+  padding-right: 20px;
+
+  &Icon {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+}
+
+.ButtonLink:hover {
+  color: var(--main-color);
+  
+  .ButtonLinkIcon {
+    color: #fff;
+  }
+}

@@ -1,0 +1,39 @@
+.InfoTable {
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  padding: 35px 30px;
+}
+
+.ListItem {
+  display: block;
+  margin-bottom: 35px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #eee;
+
+  &Img {
+    width: 100%;
+    max-width: 52px;
+    overflow: hidden;
+    float: left;
+    margin-right: 25px;
+  }
+
+  &Title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1e1e1e;
+    display: contents;
+  }
+
+  span {
+    font-size: 15px;
+    color: #aaa;
+    font-weight: 400;
+  }
+}
+
+.ListItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}

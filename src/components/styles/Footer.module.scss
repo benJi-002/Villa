@@ -1,0 +1,27 @@
+.FooterSection {
+  margin-top: 150px;
+  background-color: #1e1e1e;
+  min-height: 100px;
+}
+
+.Footer {
+
+  &Content {
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &Link {
+    color: #fff;
+    transition: all .3s;
+    position: relative;
+    z-index: 3;
+  }
+
+  &Link:hover {
+    color: #c4c4c4;
+  }
+}

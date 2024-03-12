@@ -1,0 +1,70 @@
+.Accordion {
+
+  &Root {
+    font-family: inherit;
+    border-radius: 10px;
+    background-color: #fafafa;
+    border: none;
+    max-height: 300px;
+  }
+
+  &Trigger {
+    font-family: inherit;
+    text-align: left;
+    width: 100%;
+    background-color: #fafafa;
+    border: none;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+  }
+  &Trigger:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  &Trigger:last-of-type {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  &Trigger[data-state='open'] {
+    color: var(--main-color);
+  }
+
+  &Content{
+    overflow: hidden;
+
+    &Text {
+      padding: 1rem 1.25rem;
+    }
+  }
+  &Content[data-state='open'] {
+    border-top: 1px solid #eaeaea;
+    animation: slideDown  300ms ease-out;
+  } 
+  &Content[data-state='closed'] {
+    animation: slideUp 300ms ease-out;
+  } 
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
